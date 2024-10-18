@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Banco</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Cuenta Bancaria</h1>
+        <div class="input-group">
+            <label for="monto">Monto:</label>
+            <input type="number" id="monto" min="0" step="0.01">
+        </div>
+        <div class="button-group">
+            <button onclick="realizarDeposito()">Depositar</button>
+            <button onclick="realizarRetiro()">Retirar</button>
+            <button onclick="verSaldo()">Ver Saldo</button>
+        </div>
+        <div id="resultado" class="resultado"></div>
+    </div>
+    <script src="logica.js"></script>
+</body>
+</html>
